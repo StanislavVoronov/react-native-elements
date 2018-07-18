@@ -106,7 +106,7 @@ class Input extends Component {
             </View>
           )}
         </Animated.View>
-        {errorMessage && (
+        {!!errorMessage && (
           <Text style={[styles.error, errorStyle && errorStyle]}>
             {errorMessage}
           </Text>
